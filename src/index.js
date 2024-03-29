@@ -17,7 +17,7 @@ export const answer = () => {
 
 export const right = () => console.log('Correct!');
 export const wrong = (answerPlayer, result, namePlayer) => {
-  const finishGame = `${answerPlayer} is wrong answer ;(. Correct answer was '${result}'.
+  const finishGame = `'${answerPlayer}' is wrong answer ;(. Correct answer was '${result}'.
       Let's try again, ${namePlayer}!`;
   return console.log(finishGame);
 };
