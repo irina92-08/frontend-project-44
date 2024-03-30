@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/irina92-08/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/irina92-08/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/irina92-08/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/8ec72ff06061135adfd2/maintainability" /></a>
 
- <h1>Привет, это мо первый проект "Игры разума"</h1>
+ <h1>Привет, это мой первый проект "Игры разума"</h1>
  <h2>У каждой игры 3 раунда. Если ответишь верно, победил, иначе проиграл.</h2>
 
 <p>Игра четное, не четное?</p>
