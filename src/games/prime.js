@@ -27,10 +27,10 @@ const startPrime = () => {
     question(`${randomNum}`);
     const answerPlayer = answer();
 
-    if (answerPlayer === resultPrime) {
-        right();
+    if (answerPlayer !== resultPrime) {
+      return wrong(answerPlayer, resultPrime, player);
     }
-    return wrong(answerPlayer, resultPrime, player);
+    right();
   }
   return finish(player);
 };
