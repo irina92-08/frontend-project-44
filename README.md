@@ -6,7 +6,7 @@
  <h2>У каждой игры 3 раунда. Если ответишь верно, победил, иначе проиграл.</h2>
 
 <p>Игра четное, не четное?</p>
-<a href="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn" target="_blank"><img src="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg" /></a>
+[![asciicast](https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg)](https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn)
 <br>
 <p>Игра на математические действия: сложение, вычитание, умножение.</p>
 <a href="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP" target="_blank"><img src="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP.svg" /></a>
