@@ -4,7 +4,7 @@ import {
 
 const isPrimeNum = (number) => {
   const numMax = Math.ceil(number / 2);
-  if (number % 2 === 0 && number < 2) {
+  if (number % 2 === 0 || number < 2) {
     return false;
   }
   for (let i = 3; i <= numMax; i += 2) {
