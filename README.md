@@ -7,9 +7,12 @@
 
 <p>Игра четное, не четное?</p>
 <a href="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn" target="_blank"><img src="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg" /></a>
-
+<br>
 <p>Игра на математические действия: сложение, вычитание, умножение.</p>
 <a href="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP" target="_blank"><img src="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP.svg" /></a>
-
+<br>
 <p>Нахождение наибольшего общего делителя между двумя числами.</p>
 <a href="https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ" target="_blank"><img src="https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ.svg" /></a>
+<br>
+<p>Нахождение числа в арифметической прогрессии.</p>
+<a href="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk" target="_blank"><img src="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk.svg" /></a>
