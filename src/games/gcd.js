@@ -27,10 +27,10 @@ const startGcd = () => {
     const result = resultGcd(oneNum, twoNum);
 
     question(`${oneNum} ${twoNum}`);
-    const answerGcd = Number(answer());
+    const answerPlayer = Number(answer());
 
-    if (answerGcd !== result) {
-      return wrong(answerGcd, result, player);
+    if (answerPlayer !== result) {
+      return wrong(answerPlayer, result, player);
     }
 
     right();

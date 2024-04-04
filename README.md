@@ -16,3 +16,6 @@
 <br>
 <p>Нахождение числа в арифметической прогрессии.</p>
 <a href="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk" target="_blank"><img src="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk.svg" /></a>
+<br>
+<p>Игра: Простое ли это число?</p>
+<a href="https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN" target="_blank"><img src="https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN.svg" /></a>
