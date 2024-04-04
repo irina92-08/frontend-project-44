@@ -14,6 +14,7 @@ const resultGcd = (num1, num2) => {
       return i;
     }
   }
+  return num1;
 };
 
 const startGcd = () => {
