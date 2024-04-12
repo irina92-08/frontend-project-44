@@ -9,21 +9,17 @@
  
 cloning the project:`git clone git@github.com:irina92-08/frontend-project-44.git`
 <br>
-<p>initializing the project inside the root directory
-`npm init`</p>
+initializing the project inside the root directory: `npm init`
 <br>
-<p>installing dependencies</p>
-`make install` or `npm ci`
+installing dependencies: `make install` or `npm ci`
 <br>
-<p>globally installing the package from the local directory</p>
-`npm link`
+globally installing the package from the local directory: `npm link`
 <br>
-<p>debugging package publications</p>
-`make publish` or `npm publish --dry-run`
+debugging package publications: `make publish` or `npm publish --dry-run`
 <br>
 
 <p>Is the game even or odd?</p>
-<p>Starting the game:</p>
+Starting the game:
 <br>
 `brain-even` or `make brain-even`
 <a href="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn" target="_blank"><img src="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg" /></a>
