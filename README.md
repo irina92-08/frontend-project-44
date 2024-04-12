@@ -38,7 +38,8 @@
 Starting the game: `brain-even` or `make brain-even`
 <br>
 <br>
-<a href="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn" target="_blank"><img src="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg" /></a>
+
+[![asciicast](https://asciinema.org/a/pMadYqeLdiYiH1F8YUnxncPbR.svg)](https://asciinema.org/a/pMadYqeLdiYiH1F8YUnxncPbR)
 <br>
 <h3>A mathematical action game: addition, subtraction, multiplication.</h3>
 
