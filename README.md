@@ -9,41 +9,41 @@
  
 cloning the project:`git clone git@github.com:irina92-08/frontend-project-44.git`
 <br>
+<br>
 initializing the project inside the root directory: `npm init`
+<br>
 <br>
 installing dependencies: `make install` or `npm ci`
 <br>
+<br>
 globally installing the package from the local directory: `npm link`
+<br>
 <br>
 debugging package publications: `make publish` or `npm publish --dry-run`
 <br>
+<br>
 
 <p>Is the game even or odd?</p>
-Starting the game:
+Starting the game: `brain-even` or `make brain-even`
 <br>
-`brain-even` or `make brain-even`
 <a href="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn" target="_blank"><img src="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg" /></a>
 <br>
 <p>A mathematical action game: addition, subtraction, multiplication.</p>
-<p>Starting the game:</p>
+Starting the game: `brain-calc` or `make brain-calc`
 <br>
-`brain-calc` or `make brain-calc`
 <a href="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP" target="_blank"><img src="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP.svg" /></a>
 <br>
 <p>Finding the largest common divisor between two numbers.</p>
-<p>Starting the game:</p>
+Starting the game: `brain-gcd` or `make brain-gcd`
 <br>
-`brain-gcd` or `make brain-gcd`
 <a href="https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ" target="_blank"><img src="https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ.svg" /></a>
 <br>
 <p>Finding a number in an arithmetic progression.</p>
-<p>Starting the game:</p>
+Starting the game: `brain-progression` or `make brain-progression`
 <br>
-`brain-progression` or `make brain-progression`
 <a href="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk" target="_blank"><img src="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk.svg" /></a>
 <br>
 <p>Game: Is this a prime number?</p>
-<p>Starting the game:</p>
+Starting the game:`brain-prime` or `brain-prime`
 <br>
-`brain-prime` or `brain-prime`
 <a href="https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN" target="_blank"><img src="https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN.svg" /></a>
