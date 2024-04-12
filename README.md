@@ -9,8 +9,8 @@
  
 cloning the project:`git clone git@github.com:irina92-08/frontend-project-44.git`
 <br>
-<p>initializing the project inside the root directory</p>
-`npm init`
+<p>initializing the project inside the root directory
+`npm init`</p>
 <br>
 <p>installing dependencies</p>
 `make install` or `npm ci`
