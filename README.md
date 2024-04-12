@@ -26,26 +26,21 @@ debugging package publications: `make publish` or `npm publish --dry-run`
 <h3>Is the game even or odd?</h3>
 Starting the game: `brain-even` or `make brain-even`
 <br>
-
 <a href="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn" target="_blank"><img src="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg" /></a>
 <br>
 <h3>A mathematical action game: addition, subtraction, multiplication.</h3>
 Starting the game: `brain-calc` or `make brain-calc`
 <br>
 <a href="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP" target="_blank"><img src="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP.svg" /></a>
-
 <br>
 <h3>Finding the largest common divisor between two numbers.</h3>
 Starting the game: `brain-gcd` or `make brain-gcd`
-
 <br>
 <a href="https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ" target="_blank"><img src="https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ.svg" /></a>
 <br>
-
 <h3>Finding a number in an arithmetic progression.</h3>
 Starting the game: `brain-progression` or `make brain-progression`
 <br>
-
 <a href="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk" target="_blank"><img src="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk.svg" /></a>
 <br>
 
