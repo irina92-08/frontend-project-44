@@ -68,3 +68,5 @@ Starting the game:`brain-prime` or `brain-prime`
 <br>
 <br>
 <a href="https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN" target="_blank"><img src="https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN.svg" /></a>
+
+[![asciicast](https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg)](https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn)
