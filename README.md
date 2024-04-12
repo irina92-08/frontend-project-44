@@ -2,20 +2,33 @@
 [![Actions Status](https://github.com/irina92-08/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/irina92-08/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/irina92-08/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/8ec72ff06061135adfd2/maintainability" /></a>
 
- <h1>Привет, это мой первый проект "Игры разума"</h1>
- <h2>У каждой игры 3 раунда. Если ответишь верно, победил, иначе проиграл.</h2>
+ <h1>The Mind Games Project.</h1>
+ <h2>Each game has 3 rounds. If you answer correctly, you win, otherwise you lose.</h2>
+ 
+ <h2> Download, install and use:</h2>
+ 
+cloning the project
+`git clone git@github.com:irina92-08/frontend-project-44.git`
 
-<p>Игра четное, не четное?</p>
+initializing the project inside the root directory
+`npm init`
+
+installing dependencies
+`npm ci`
+globally installing the package from the local directory
+debugging package publications
+
+<p>Is the game even or odd?</p>
 <a href="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn" target="_blank"><img src="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg" /></a>
 <br>
-<p>Игра на математические действия: сложение, вычитание, умножение.</p>
+<p>A mathematical action game: addition, subtraction, multiplication.</p>
 <a href="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP" target="_blank"><img src="https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP.svg" /></a>
 <br>
-<p>Нахождение наибольшего общего делителя между двумя числами.</p>
+<p>Finding the largest common divisor between two numbers.</p>
 <a href="https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ" target="_blank"><img src="https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ.svg" /></a>
 <br>
-<p>Нахождение числа в арифметической прогрессии.</p>
+<p>Finding a number in an arithmetic progression.</p>
 <a href="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk" target="_blank"><img src="https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk.svg" /></a>
 <br>
-<p>Игра: Простое ли это число?</p>
+<p>Game: Is this a prime number?</p>
 <a href="https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN" target="_blank"><img src="https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN.svg" /></a>
