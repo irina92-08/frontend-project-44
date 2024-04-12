@@ -7,7 +7,7 @@
  
  <h2> Download, install and use:</h2>
  
-<p>cloning the project:`git clone git@github.com:irina92-08/frontend-project-44.git`</p>
+cloning the project:`git clone git@github.com:irina92-08/frontend-project-44.git`
 <br>
 <p>initializing the project inside the root directory</p>
 `npm init`
