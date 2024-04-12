@@ -24,6 +24,7 @@ debugging package publications: `make publish` or `npm publish --dry-run`
 <br>
 
 <p>Is the game even or odd?</p>
+<br>
 Starting the game: `brain-even` or `make brain-even`
 <br>
 <a href="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn" target="_blank"><img src="https://asciinema.org/a/k2tDs2tryrUpj2Z4YRkHMmDxn.svg" /></a>
