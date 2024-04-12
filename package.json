@@ -9,7 +9,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "description": "The Mind Games project includes 5 games. Each game has 3 rounds. If you answer correctly, you win, otherwise you lose.",
+  "description": "[![Actions Status](https://github.com/irina92-08/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/irina92-08/frontend-project-44/actions)",
   "main": "index.js",
   "type": "module",
   "scripts": {
