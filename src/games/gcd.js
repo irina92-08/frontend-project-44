@@ -1,7 +1,7 @@
 import {
   start, question, name, answer, right, wrong, finish,
 } from '../index.js';
-import getRandomInRange from '../../src/utils.js';
+import getRandomInRange from '../utils.js';
 
 const resultGcd = (num1, num2) => {
   const minNum = num1 < num2 ? num1 : num2;

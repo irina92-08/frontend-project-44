@@ -7,7 +7,6 @@ export const name = () => {
   console.log(`Hello, ${result}!`);
   return result;
 };
-export const randomaizer = () => Math.ceil(Math.random() * 100);
 
 export const question = (example) => console.log(`Question: ${example}`);
 export const answer = () => {
