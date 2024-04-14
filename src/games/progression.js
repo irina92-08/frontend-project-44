@@ -1,5 +1,5 @@
 import {
-  start, question, name, answer, right, wrong, finish,
+  COUNT_ROUNDS, start, question, name, answer, right, wrong, finish,
 } from '../index.js';
 import getRandomInRange from '../utils.js';
 
@@ -29,7 +29,7 @@ const startProgress = () => {
   const player = name();
   console.log('What number is missing in the progression?');
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < COUNT_ROUNDS; i += 1) {
     const resultProgression = progressionArrs();
     const resultQuestionForPlayer = resultQuestion(resultProgression);
     question(`${resultQuestionForPlayer[1]}`);

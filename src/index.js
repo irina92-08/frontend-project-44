@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
 
+export const COUNT_ROUNDS = 3;
+
 export const start = () => console.log('Welcome to the Brain Games!');
 
 export const name = () => {
