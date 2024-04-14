@@ -1,6 +1,7 @@
 import {
-  start, randomaizer, question, name, answer, right, wrong, finish,
+  start, question, name, answer, right, wrong, finish,
 } from '../index.js';
+import getRandomInRange from '../../src/utils.js';
 
 const startCalc = () => {
   start();
@@ -8,8 +9,8 @@ const startCalc = () => {
   const player = name();
   console.log('What is the result of the expression?');
 
-  const sumOne = randomaizer();
-  const sumTwo = randomaizer();
+  const sumOne = getRandomInRange();
+  const sumTwo = getRandomInRange();
 
   const sum = `${sumOne} + ${sumTwo}`;
   const resultSum = sumOne + sumTwo;
@@ -22,8 +23,8 @@ const startCalc = () => {
   }
   right();
 
-  const diminutive = randomaizer() * 10;
-  const deductible = randomaizer();
+  const diminutive = getRandomInRange(150, 200);
+  const deductible = getRandomInRange();
 
   const difference = `${diminutive} - ${deductible}`;
   const resultDiff = diminutive - deductible;
@@ -36,8 +37,8 @@ const startCalc = () => {
   }
   right();
 
-  const oneMulti = randomaizer();
-  const twoMulti = randomaizer();
+  const oneMulti = getRandomInRange();
+  const twoMulti = getRandomInRange();
 
   const multiplier = `${oneMulti} * ${twoMulti}`;
   const resultMulti = oneMulti * twoMulti;

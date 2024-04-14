@@ -1,6 +1,7 @@
 import {
-  start, randomaizer, question, name, answer, right, wrong, finish,
+  start, question, name, answer, right, wrong, finish,
 } from '../index.js';
+import getRandomInRange from '../../src/utils.js';
 
 const isPrimeNum = (number) => {
   const numMax = Math.ceil(number / 2);
@@ -21,7 +22,7 @@ const startPrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
-    const randomNum = randomaizer();
+    const randomNum = getRandomInRange();
     const resultPrime = isPrimeNum(randomNum) ? 'yes' : 'no';
 
     question(`${randomNum}`);

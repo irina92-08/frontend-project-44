@@ -1,6 +1,7 @@
 import {
-  start, randomaizer, question, name, answer, right, wrong, finish,
+  start, question, name, answer, right, wrong, finish,
 } from '../index.js';
+import getRandomInRange from '../../src/utils.js';
 
 const isItEvenNumber = (number) => {
   if (number % 2 === 0) {
@@ -16,7 +17,7 @@ const startEvenGame = () => {
 
   let result;
   for (let i = 0; i < 3; i += 1) {
-    result = randomaizer();
+    result = getRandomInRange();
     const isItEvenNum = isItEvenNumber(result);
     question(result);
     const answerPlayer = answer();

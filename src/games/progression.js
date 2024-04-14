@@ -1,11 +1,13 @@
 import {
-  start, randomaizer, question, name, answer, right, wrong, finish,
+  start, question, name, answer, right, wrong, finish,
 } from '../index.js';
+import getRandomInRange from '../../src/utils.js';
 
 const progressionArrs = () => {
-  let one = randomaizer();
+  let one = getRandomInRange();
   const result = [one];
-  for (let i = 0; i < 10; i += 1) {
+  const countNumbersInProgression = 10;
+  for (let i = 0; i < countNumbersInProgression; i += 1) {
     one += 4;
     result.push(one);
   }
@@ -14,7 +16,7 @@ const progressionArrs = () => {
 const resultQuestion = (arrs) => {
   const arrsNew = arrs;
   const result = [];
-  const item = Math.floor(Math.random() * 10);
+  const item = getRandomInRange(0, 10);
   result.push(arrsNew[item]);
   arrsNew[item] = '..';
   const arrsStr = arrsNew.join(' ');

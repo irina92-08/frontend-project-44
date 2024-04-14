@@ -1,6 +1,7 @@
 import {
-  start, randomaizer, question, name, answer, right, wrong, finish,
+  start, question, name, answer, right, wrong, finish,
 } from '../index.js';
+import getRandomInRange from '../../src/utils.js';
 
 const resultGcd = (num1, num2) => {
   const minNum = num1 < num2 ? num1 : num2;
@@ -23,8 +24,8 @@ const startGcd = () => {
   console.log('Find the greatest common divisor of given numbers.');
 
   for (let i = 1; i < 4; i += 1) {
-    const oneNum = randomaizer();
-    const twoNum = randomaizer();
+    const oneNum = getRandomInRange();
+    const twoNum = getRandomInRange();
     const result = resultGcd(oneNum, twoNum);
 
     question(`${oneNum} ${twoNum}`);
