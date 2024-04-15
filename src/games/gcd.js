@@ -1,5 +1,6 @@
+import makeWelcom from '../cli.js';
 import {
-  COUNT_ROUNDS, start, question, name, answer, right, wrong, finish,
+  COUNT_ROUNDS, question, answer, right, wrong, finish,
 } from '../index.js';
 import getRandomInRange from '../utils.js';
 
@@ -19,8 +20,7 @@ const resultGcd = (num1, num2) => {
 };
 
 const startGcd = () => {
-  start();
-  const player = name();
+  const player = makeWelcom();
   console.log('Find the greatest common divisor of given numbers.');
 
   for (let i = 1; i <= COUNT_ROUNDS; i += 1) {

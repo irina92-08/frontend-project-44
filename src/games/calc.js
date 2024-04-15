@@ -1,12 +1,11 @@
+import makeWelcom from '../cli.js';
 import {
-  start, question, name, answer, right, wrong, finish,
+  question, answer, right, wrong, finish,
 } from '../index.js';
 import getRandomInRange from '../utils.js';
 
 const startCalc = () => {
-  start();
-
-  const player = name();
+  const player = makeWelcom();
   console.log('What is the result of the expression?');
 
   const sumOne = getRandomInRange();

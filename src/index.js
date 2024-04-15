@@ -2,14 +2,6 @@ import readlineSync from 'readline-sync';
 
 export const COUNT_ROUNDS = 3;
 
-export const start = () => console.log('Welcome to the Brain Games!');
-
-export const name = () => {
-  const result = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${result}!`);
-  return result;
-};
-
 export const question = (example) => console.log(`Question: ${example}`);
 export const answer = () => {
   const answerPlay = readlineSync.question('Your answer: ');

@@ -1,5 +1,6 @@
+import makeWelcom from '../cli.js';
 import {
-  COUNT_ROUNDS, start, question, name, answer, right, wrong, finish,
+  COUNT_ROUNDS, question, answer, right, wrong, finish,
 } from '../index.js';
 import getRandomInRange from '../utils.js';
 
@@ -20,8 +21,7 @@ const isPrimeNum = (number) => {
 };
 
 const startPrime = () => {
-  start();
-  const player = name();
+  const player = makeWelcom();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
   for (let i = 0; i < COUNT_ROUNDS; i += 1) {
