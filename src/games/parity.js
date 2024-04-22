@@ -2,7 +2,7 @@ import makeWelcom from '../cli.js';
 import {
   COUNT_ROUNDS, question, answer, right, wrong, finish,
 } from '../index.js';
-import getRandomInRange from '../utils.js';
+import { getRandomInRange } from '../utils.js';
 
 const isItEvenNumber = (number) => {
   if (number % 2 === 0) {

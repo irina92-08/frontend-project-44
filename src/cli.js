@@ -2,9 +2,9 @@ import readlineSync from 'readline-sync';
 
 const makeWelcom = () => {
   console.log('Welcome to the Brain Games!');
-  const result = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${result}!`);
-  return result;
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  return userName;
 };
 
 export default makeWelcom;

@@ -2,7 +2,7 @@ import makeWelcom from '../cli.js';
 import {
   question, answer, right, wrong, finish,
 } from '../index.js';
-import getRandomInRange from '../utils.js';
+import { getRandomInRange } from '../utils.js';
 
 const startCalc = () => {
   const player = makeWelcom();
