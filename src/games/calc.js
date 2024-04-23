@@ -1,55 +1,56 @@
-import makeWelcom from '../cli.js';
-import {
-  question, answer, right, wrong, finish,
-} from '../index.js';
+import { runEngine } from '../index.js';
 import { getRandomInRange } from '../utils.js';
 
+let ROUND;
+
+const getMathAction = () => {
+  if (ROUND === 0) {
+    ROUND += 1;
+    return '+';
+  }
+
+  if (ROUND === 1) {
+    ROUND += 1;
+    return '-';
+  }
+
+  ROUND += 1;
+  return '*';
+};
+
+const getMathAnswer = (x, y, znak) => {
+  let math = 0;
+
+  switch (znak) {
+    case '+':
+      math = x + y;
+      break;
+    case '-':
+      math = x - y;
+      break;
+    default:
+      math = x * y;
+  }
+  return math;
+};
+
+const generateRoundCalc = () => {
+  const oneNum = getRandomInRange(50, 100);
+  const twoNum = getRandomInRange(0, 50);
+
+  const mathematicalAction = getMathAction();
+  const questionCalc = `${String(oneNum)} ${mathematicalAction} ${String(twoNum)}`;
+  const answerCalc = getMathAnswer(oneNum, twoNum, mathematicalAction);
+
+  return [questionCalc, `${String(answerCalc)}`];
+};
+
 const startCalc = () => {
-  const player = makeWelcom();
-  console.log('What is the result of the expression?');
+  const rulesCalc = 'What is the result of the expression?';
 
-  const sumOne = getRandomInRange();
-  const sumTwo = getRandomInRange();
+  ROUND = 0;
 
-  const sum = `${sumOne} + ${sumTwo}`;
-  const resultSum = sumOne + sumTwo;
-
-  question(sum);
-  const answer1 = Number(answer());
-
-  if (answer1 !== resultSum) {
-    return wrong(answer1, resultSum, player);
-  }
-  right();
-
-  const diminutive = getRandomInRange(150, 200);
-  const deductible = getRandomInRange();
-
-  const difference = `${diminutive} - ${deductible}`;
-  const resultDiff = diminutive - deductible;
-
-  question(difference);
-  const answer2 = Number(answer());
-
-  if (answer2 !== resultDiff) {
-    return wrong(answer2, resultDiff, player);
-  }
-  right();
-
-  const oneMulti = getRandomInRange();
-  const twoMulti = getRandomInRange();
-
-  const multiplier = `${oneMulti} * ${twoMulti}`;
-  const resultMulti = oneMulti * twoMulti;
-
-  question(multiplier);
-  const answer3 = Number(answer());
-
-  if (answer3 !== resultMulti) {
-    return wrong(answer3, resultMulti, player);
-  }
-  right();
-  return finish(player);
+  runEngine(rulesCalc, generateRoundCalc);
 };
 
 export default startCalc;

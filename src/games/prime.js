@@ -1,7 +1,4 @@
-import makeWelcom from '../cli.js';
-import {
-  COUNT_ROUNDS, question, answer, right, wrong, finish,
-} from '../index.js';
+import { runEngine } from '../index.js';
 import { getRandomInRange } from '../utils.js';
 
 const isPrimeNum = (number) => {
@@ -20,23 +17,18 @@ const isPrimeNum = (number) => {
   return true;
 };
 
+const generateRoundPrime = () => {
+  const randomNum = getRandomInRange();
+
+  const answerPrime = isPrimeNum(randomNum) ? 'yes' : 'no';
+
+  return [`${String(randomNum)}`, `${answerPrime}`];
+};
+
 const startPrime = () => {
-  const player = makeWelcom();
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  const rulesPrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-  for (let i = 0; i < COUNT_ROUNDS; i += 1) {
-    const randomNum = getRandomInRange();
-    const resultPrime = isPrimeNum(randomNum) ? 'yes' : 'no';
-
-    question(`${randomNum}`);
-    const answerPlayer = answer();
-
-    if (answerPlayer !== resultPrime) {
-      return wrong(answerPlayer, resultPrime, player);
-    }
-    right();
-  }
-  return finish(player);
+  runEngine(rulesPrime, generateRoundPrime);
 };
 
 export default startPrime;

@@ -1,7 +1,4 @@
-import makeWelcom from '../cli.js';
-import {
-  COUNT_ROUNDS, question, answer, right, wrong, finish,
-} from '../index.js';
+import { runEngine } from '../index.js';
 import { getRandomInRange } from '../utils.js';
 
 const progressionArrs = () => {
@@ -25,23 +22,15 @@ const resultQuestion = (arrs) => {
   return result;
 };
 
+const generateRoundProgress = () => {
+  const numsProgression = progressionArrs();
+  const [answerPro, questionPro] = resultQuestion(numsProgression);
+
+  return [questionPro, `${String(answerPro)}`];
+};
+
 const startProgress = () => {
-  const player = makeWelcom();
-  console.log('What number is missing in the progression?');
-
-  for (let i = 0; i < COUNT_ROUNDS; i += 1) {
-    const resultProgression = progressionArrs();
-    const resultQuestionForPlayer = resultQuestion(resultProgression);
-    question(`${resultQuestionForPlayer[1]}`);
-
-    const answerProgress = Number(answer());
-
-    if (answerProgress !== resultQuestionForPlayer[0]) {
-      return wrong(answerProgress, resultQuestionForPlayer[0], player);
-    }
-
-    right();
-  }
-  return finish(player);
+  const rulesProgress = 'What number is missing in the progression?';
+  runEngine(rulesProgress, generateRoundProgress);
 };
 export default startProgress;

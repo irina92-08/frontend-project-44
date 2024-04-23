@@ -1,33 +1,25 @@
-import makeWelcom from '../cli.js';
-import {
-  COUNT_ROUNDS, question, answer, right, wrong, finish,
-} from '../index.js';
+import { runEngine } from '../index.js';
 import { getRandomInRange } from '../utils.js';
 
 const isItEvenNumber = (number) => {
   if (number % 2 === 0) {
-    return 'yes';
+    return true;
   }
-  return 'no';
+  return false;
+};
+
+const generateRoundEven = () => {
+  const questionEven = getRandomInRange();
+  const EvenNum = isItEvenNumber(questionEven) ? 'yes' : 'no';
+  const answer = EvenNum;
+
+  return [`${String(questionEven)}`, `${answer}`];
 };
 
 const startEvenGame = () => {
-  const player = makeWelcom();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  const rulesEven = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  let result;
-  for (let i = 0; i < COUNT_ROUNDS; i += 1) {
-    result = getRandomInRange();
-    const isItEvenNum = isItEvenNumber(result);
-    question(result);
-    const answerPlayer = answer();
-
-    if (answerPlayer !== isItEvenNum) {
-      return wrong(answerPlayer, isItEvenNum, player);
-    }
-    right();
-  }
-  return finish(player);
+  runEngine(rulesEven, generateRoundEven);
 };
 
 export default startEvenGame;

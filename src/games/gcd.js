@@ -1,7 +1,4 @@
-import makeWelcom from '../cli.js';
-import {
-  COUNT_ROUNDS, question, answer, right, wrong, finish,
-} from '../index.js';
+import { runEngine } from '../index.js';
 import { getRandomInRange } from '../utils.js';
 
 const resultGcd = (num1, num2) => {
@@ -19,24 +16,18 @@ const resultGcd = (num1, num2) => {
   return num1;
 };
 
+const generateRoundGcd = () => {
+  const oneNum = getRandomInRange();
+  const twoNum = getRandomInRange();
+
+  const answerGcd = resultGcd(oneNum, twoNum);
+  const questionGcd = (`${oneNum} ${twoNum}`);
+
+  return [`${String(questionGcd)}`, `${String(answerGcd)}`];
+};
+
 const startGcd = () => {
-  const player = makeWelcom();
-  console.log('Find the greatest common divisor of given numbers.');
-
-  for (let i = 1; i <= COUNT_ROUNDS; i += 1) {
-    const oneNum = getRandomInRange();
-    const twoNum = getRandomInRange();
-    const result = resultGcd(oneNum, twoNum);
-
-    question(`${oneNum} ${twoNum}`);
-    const answerPlayer = Number(answer());
-
-    if (answerPlayer !== result) {
-      return wrong(answerPlayer, result, player);
-    }
-
-    right();
-  }
-  return finish(player);
+  const rulesGcd = 'Find the greatest common divisor of given numbers.';
+  runEngine(rulesGcd, generateRoundGcd);
 };
 export default startGcd;
