@@ -1,18 +1,23 @@
+/* eslint-disable import/prefer-default-export */
 import readlineSync from 'readline-sync';
+import makeWelcom from './cli.js';
 
-export const COUNT_ROUNDS = 3;
+export const runEngine = (rules, generateRound) => {
+  const userName = makeWelcom();
+  console.log(rules);
+  const roundsCount = 3;
+  for (let i = 0; i < roundsCount; i += 1) {
+    const [question, answer] = generateRound();
 
-export const question = (example) => console.log(`Question: ${example}`);
-export const answer = () => {
-  const answerPlay = readlineSync.question('Your answer: ');
-  return answerPlay;
+    console.log(`Question: ${question}`);
+    const answerUser = readlineSync.question('Your answer: ');
+
+    if (answerUser !== answer) {
+      const finishGame = `'${answerUser}' is wrong answer ;(. Correct answer was '${answer}'.
+      Let's try again, ${userName}!`;
+      return console.log(finishGame);
+    }
+    console.log('Correct!');
+  }
+  return console.log(`Congratulations, ${userName}!`);
 };
-
-export const right = () => console.log('Correct!');
-export const wrong = (answerPlayer, result, namePlayer) => {
-  const finishGame = `'${answerPlayer}' is wrong answer ;(. Correct answer was '${result}'.
-      Let's try again, ${namePlayer}!`;
-  return console.log(finishGame);
-};
-
-export const finish = (namePlay) => console.log(`Congratulations, ${namePlay}!`);
