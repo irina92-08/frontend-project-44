@@ -55,7 +55,7 @@ Starting the game: `brain-gcd` or `make brain-gcd`
 <br>
 <br>
 
-[![asciicast](https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ.svg)](https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ)
+[![asciicast](https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ.png)](https://asciinema.org/a/xHPHJ5Yec8O5Rkc1cuWxoqfBJ)
 <br>
 <h3>Finding a number in an arithmetic progression.</h3>
 
@@ -63,7 +63,7 @@ Starting the game: `brain-progression` or `make brain-progression`
 <br>
 <br>
 
-[![asciicast](https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk.svg)](https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk)
+[![asciicast](https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk.png)](https://asciinema.org/a/5SonbeQ8Be2wCElsed1AUAtBk)
 <br>
 
 <h3>Game: Is this a prime number?</h3>
@@ -72,4 +72,4 @@ Starting the game:`brain-prime` or `brain-prime`
 <br>
 <br>
 
-[![asciicast](https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN.svg)](https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN)
+[![asciicast](https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN.png)](https://asciinema.org/a/GD3pguZEcaBYK4KiA2TcK1UfN)
