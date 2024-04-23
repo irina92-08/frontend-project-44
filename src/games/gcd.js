@@ -3,7 +3,7 @@ import { getRandomInRange } from '../utils.js';
 
 const resultGcd = (num1, num2) => {
   const minNum = num1 < num2 ? num1 : num2;
-  const maxNum = num1 > num2 ? num1 : num2;
+  const maxNum = !minNum;
   if (maxNum % minNum === 0) {
     return minNum;
   }
@@ -17,8 +17,8 @@ const resultGcd = (num1, num2) => {
 };
 
 const generateRoundGcd = () => {
-  const oneNum = getRandomInRange();
-  const twoNum = getRandomInRange();
+  const oneNum = getRandomInRange(1, 100);
+  const twoNum = getRandomInRange(1, 100);
 
   const answerGcd = resultGcd(oneNum, twoNum);
   const questionGcd = (`${oneNum} ${twoNum}`);
