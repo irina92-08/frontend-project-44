@@ -39,7 +39,7 @@ Starting the game: `brain-even` or `make brain-even`
 <br>
 <br>
 
-[![asciicast](https://asciinema.org/a/pMadYqeLdiYiH1F8YUnxncPbR.svg)](https://asciinema.org/a/pMadYqeLdiYiH1F8YUnxncPbR)
+[![asciicast](https://asciinema.org/a/pMadYqeLdiYiH1F8YUnxncPbR.png)](https://asciinema.org/a/pMadYqeLdiYiH1F8YUnxncPbR)
 <br>
 <h3>A mathematical action game: addition, subtraction, multiplication.</h3>
 
@@ -47,7 +47,7 @@ Starting the game: `brain-calc` or `make brain-calc`
 <br>
 <br>
 
-[![asciicast](https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP.svg)](https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP)
+[![asciicast](https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP.png)](https://asciinema.org/a/KkqPfKoADZI4R9sNgS1fEcxsP)
 <br>
 <h3>Finding the largest common divisor between two numbers.</h3>
 
