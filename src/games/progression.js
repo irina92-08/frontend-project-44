@@ -2,12 +2,12 @@ import { runEngine } from '../index.js';
 import { getRandomInRange } from '../utils.js';
 
 const generateProgression = (start, step, length = 10) => {
-const progressionArr = [];
-for (let i = 0; i < length; i += 1) {
-  const numberProgression = start + step * i;
-  progressionArr.push(numberProgression);
-}
-return progressionArr;
+  const progressionArr = [];
+  for (let i = 0; i < length; i += 1) {
+    const numberProgression = start + step * i;
+    progressionArr.push(numberProgression);
+  }
+  return progressionArr;
 };
 
 const generateRoundProgress = () => {
@@ -20,7 +20,7 @@ const generateRoundProgress = () => {
   const answerProgress = `${progression[hiddenIndex]}`;
   progression[hiddenIndex] = '..';
   const questionProgress = progression.join(' ');
-  
+
   return [questionProgress, answerProgress];
 };
 

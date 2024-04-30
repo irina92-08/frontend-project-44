@@ -21,5 +21,4 @@ export const runEngine = (rules, generateRound) => {
     console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
-return;
 };

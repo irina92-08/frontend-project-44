@@ -1,54 +1,37 @@
 import { runEngine } from '../index.js';
 import { getRandomInRange } from '../utils.js';
 
-let ROUND;
-
-const getMathAction = () => {
-  if (ROUND === 0) {
-    ROUND += 1;
-    return '+';
-  }
-
-  if (ROUND === 1) {
-    ROUND += 1;
-    return '-';
-  }
-
-  ROUND += 1;
-  return '*';
+const getRandomOperator = () => {
+  const operators = ['+', '-', '*'];
+  const indexOperator = getRandomInRange(0, operators.length - 1);
+  return operators[indexOperator];
 };
 
-const getMathAnswer = (x, y, znak) => {
-  let math = 0;
-
-  switch (znak) {
+const calculation = (x, y, operator) => {
+  switch (operator) {
     case '+':
-      math = x + y;
-      break;
+      return x + y;
     case '-':
-      math = x - y;
-      break;
-    default:
-      math = x * y;
+      return x - y;
+    case '*':
+      return x * y;
+    default: throw new Error(`Invalid operator - ${operator}`);
   }
-  return math;
 };
 
 const generateRoundCalc = () => {
   const oneNum = getRandomInRange(50, 100);
   const twoNum = getRandomInRange(0, 50);
 
-  const mathematicalAction = getMathAction();
-  const questionCalc = `${oneNum} ${mathematicalAction} ${twoNum}`;
-  const answerCalc = `${getMathAnswer(oneNum, twoNum, mathematicalAction)}`;
+  const operatorCalc = getRandomOperator();
+  const questionCalc = `${oneNum} ${operatorCalc} ${twoNum}`;
+  const answerCalc = `${calculation(oneNum, twoNum, operatorCalc)}`;
 
   return [questionCalc, answerCalc];
 };
 
 const startCalc = () => {
   const rulesCalc = 'What is the result of the expression?';
-
-  ROUND = 0;
 
   runEngine(rulesCalc, generateRoundCalc);
 };
