@@ -39,10 +39,10 @@ const generateRoundCalc = () => {
   const twoNum = getRandomInRange(0, 50);
 
   const mathematicalAction = getMathAction();
-  const questionCalc = `${String(oneNum)} ${mathematicalAction} ${String(twoNum)}`;
-  const answerCalc = getMathAnswer(oneNum, twoNum, mathematicalAction);
+  const questionCalc = `${oneNum} ${mathematicalAction} ${twoNum}`;
+  const answerCalc = `${getMathAnswer(oneNum, twoNum, mathematicalAction)}`;
 
-  return [questionCalc, `${String(answerCalc)}`];
+  return [questionCalc, answerCalc];
 };
 
 const startCalc = () => {

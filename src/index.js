@@ -15,9 +15,11 @@ export const runEngine = (rules, generateRound) => {
     if (answerUser !== answer) {
       const finishGame = `'${answerUser}' is wrong answer ;(. Correct answer was '${answer}'.
       Let's try again, ${userName}!`;
-      return console.log(finishGame);
+      console.log(finishGame);
+      return;
     }
     console.log('Correct!');
   }
-  return console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
+return;
 };

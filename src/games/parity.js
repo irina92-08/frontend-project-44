@@ -9,11 +9,12 @@ const isItEvenNumber = (number) => {
 };
 
 const generateRoundEven = () => {
-  const questionEven = getRandomInRange();
-  const EvenNum = isItEvenNumber(questionEven) ? 'yes' : 'no';
+  const randomEven = getRandomInRange();
+  const EvenNum = isItEvenNumber(randomEven) ? 'yes' : 'no';
+  const questionEven = `${randomEven}`;
   const answer = EvenNum;
 
-  return [`${String(questionEven)}`, `${answer}`];
+  return [questionEven, answer];
 };
 
 const startEvenGame = () => {

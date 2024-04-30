@@ -20,9 +20,10 @@ const isPrimeNum = (number) => {
 const generateRoundPrime = () => {
   const randomNum = getRandomInRange();
 
+  const questionPrime = `${randomNum}`;
   const answerPrime = isPrimeNum(randomNum) ? 'yes' : 'no';
 
-  return [`${String(randomNum)}`, `${answerPrime}`];
+  return [questionPrime, answerPrime];
 };
 
 const startPrime = () => {

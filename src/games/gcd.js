@@ -19,10 +19,10 @@ const generateRoundGcd = () => {
   const oneNum = getRandomInRange();
   const twoNum = getRandomInRange();
 
-  const answerGcd = getDivizor(oneNum, twoNum);
-  const questionGcd = (`${oneNum} ${twoNum}`);
+  const answerGcd = `${getDivizor(oneNum, twoNum)}`;
+  const questionGcd = `${oneNum} ${twoNum}`;
 
-  return [`${String(questionGcd)}`, `${String(answerGcd)}`];
+  return [questionGcd, answerGcd];
 };
 
 const startGcd = () => {
